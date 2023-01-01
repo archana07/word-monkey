@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box !important;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    background-color: #fef5de;
+    margin: 0;
+}
+
+.board-container {
+    height: 520px;
+    width: 520px;
+    float: none;
+    position: fixed;
+    bottom: -520px;
+    background-color: antiquewhite;
+    margin-top: 300px;
+    left: calc(50vw - 255px);
+    background-image: url("../images/monkey-board.jpeg");
+    background-repeat: no-repeat;
+}
+
+.board-container .game-board {
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bolder;
+    border: 2px solid #370404;
+    background-color: rgb(252, 158, 6);
+    border-radius: 10px;
+    width: 170px;
+    color: #561707;
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 10px 0 10px 15px;
+}
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+.score-board {
+    width: 250px;
+    background-color: #561707;
+    border-radius: 15px;
+    border: 5px solid rgb(252, 137, 6);
+    float: right;
+    margin: 20px 20px 0 0;
+    padding: 20px 0 0 0;
+}
+
+.score-board ul {
+    margin: 0;
+    padding: 0;
+}
+
+.score-board ul li {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    color: rgb(252, 251, 250);
+    text-align: center;
+}
+
+#wrongScore,
+#totalScore,
+#correctScore {
+    font-size: 32px;
+    text-align: center;
+    border: 2px solid rgb(247, 223, 196);
+    border-radius: 10px;
+    background-color: rgb(252, 158, 6);
+    color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.grass-field {
+    height: 170px;
+    width: 100vw;
+    background-image: url("../images/bg-grass.png");
+    background-repeat: repeat-x;
+    float: left;
+    position: fixed;
+    bottom: 0;
+}
